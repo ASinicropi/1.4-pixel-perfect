@@ -1,0 +1,391 @@
+<style>
+@import 'https://fonts.googleapis.com/css?family=Open+Sans|Oswald';
+</style>
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 1300px;
+  margin: 0 auto;
+}
+
+header {
+  position: relative; /* for absolute children */
+  height: 523px;
+  background-image: url('http://unsplash.it/1300/523');
+}
+
+header:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 96, 172, 0.6);
+}
+
+header h1, header h3 {
+  position: relative;
+  text-align: center;
+}
+
+.brand {
+  display: inline-block;
+  padding-left: 200px;
+  margin-top: 0px;
+}
+
+.logo {
+  vertical-align: middle;
+  height: 45px;
+  width: 45px;
+  padding-top: 10px;
+}
+
+.company-name {
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.main-nav {
+  padding: 0;
+}
+
+.main-nav li {
+  float: left;
+}
+
+nav {
+  display: inline-block;
+  margin-top: 0px;
+}
+
+nav ul {
+  list-style: none;
+  float: right;
+  text-transform: uppercase;
+  background-color: white;
+  margin-left: 500px;
+}
+
+ul a {
+  color: black;
+  padding-right: 10px;
+  text-decoration: none;
+}
+
+li i {
+transform: scaleX(-1);
+}
+
+h1 {
+  font-family: "Oswald", sans-serif;
+  color: white;
+  font-size: 100px;
+  font-weight: lighter;
+  margin-bottom: 0;
+}
+
+h3 {
+  font-family: "Oswald", sans-serif;
+  color: black;
+  font-size: 15px;
+  font-weight: normal;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.main {
+display: inline-block;
+float: left;
+width: 50%; /*added here*/
+padding-left: 90px;
+}
+
+.side {
+  float:left;
+  padding-top: 40px;
+  padding-left: 60px;
+  width: 30%;
+}
+
+.main h1 {
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  font-weight: lighter;
+  color: #083452;
+  font-size: 50px;
+  font-weight: normal;
+  text-align: left;
+}
+
+.profile-pic img {
+    height: 22px;
+    width: 22px;
+  }
+
+.name {
+  font-family: "Oswald", sans-serif;
+  color: #196FB1;
+  padding-left: 5px;
+}
+
+.on {
+  color: #A3B3BF;
+  font-family: "Oswald", sans-serif;
+  padding-left: 10px;
+}
+
+.date {
+  color: #A3B3BF;
+  font-family: "Oswald", sans-serif;
+  text-decoration: underline;
+}
+
+.clearfix {
+  content: '';
+  display: inline-block;
+  clear: both;
+  padding-bottom: 50px;
+}
+
+.main-bottom h2 {
+  font-size: 33px;
+  font-family: "Oswald", sans-serif;
+  font-weight: lighter;
+  text-transform: uppercase;
+  color: #106DB3;
+  padding-left: 6px;
+  border-left: 2px solid;
+  border-color: #D3D3D3;
+}
+
+.comment-read-share * {
+  display: inline-block;
+}
+
+.read-comments {
+  background-color: #A3B3BE;
+  float: right;
+  color: white;
+  font-size: 12px;
+  padding: 4px 8px 4px 8px;
+}
+
+.comment i {
+  background-color: #5E686F;
+  color: white;
+  font-size: smaller;
+  padding: 4px 4px 4px 4px;
+}
+
+.read {
+  padding-left: 3px;
+}
+
+.read-later {
+  background-color: #A3B3BE;
+  float: right;
+  color: white;
+  font-size: 12px;
+  padding: 4px 8px 4px 8px;
+}
+
+.read i {
+  background-color: #5E686F;
+  color: white;
+  font-size: smaller;
+  padding: 4px 4px 4px 4px;
+}
+
+.share {
+  padding-left: 3px;
+}
+
+.share-post {
+  background-color: #A3B3BE;
+  float: right;
+  color: white;
+  font-size: 12px;
+  padding: 4px 8px 4px 8px;
+}
+
+.share i {
+  background-color: #5E686F;
+  font-size: smaller;
+  color: white;
+  padding: 4px 4px 4px 4px;
+}
+
+.profile-side {
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  padding-left: 50px;
+
+}
+
+.profile-side img{
+  height: 80px;
+  width: 80px;
+  padding-left: 35px;
+}
+
+.name-side {
+  display: block;
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
+  color: #196FB1;
+  font-size: 18px;
+  padding-left: 40px;
+}
+
+.side-header h2 {
+  font-size: 17px;
+  color: #106DB3;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  font-weight: normal;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-top: 40px;
+}
+
+.social-media{
+  color: #A3B3BE;
+  font-family: "Oswald", sans-serif;
+  padding-left: 40px;
+}
+
+.facebook {
+  padding-left: 5px;
+  border-left: 1px solid;
+  border-color: #FAFAFA;
+}
+
+.Instagram {
+  padding-left: 5px;
+  border-left: 1px solid;
+  border-color: #FAFAFA;
+}
+
+.ad img {
+  display: inline-block;
+  height: 300px;
+  width: 300px;
+  padding-top: 60px;
+  margin: 0;
+}
+
+.about-ad {
+  padding-left: 225px;
+  color: #BAC6CF;
+  text-decoration: underline;
+  font-family: "Oswald",sans-serif;
+  font-size: 12px;
+}
+
+.side-header p {
+  margin-top: 0;
+  padding-top: 5px;
+}
+
+.popular-post {
+  border-top: 1px solid;
+  border-color: #E1E7EA;
+}
+
+.popular-post h1 {
+  font-size: 68px;
+  font-family: "Oswald", sans-serif;
+  color: #083450;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: lighter;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.creative:hover{
+  opacity: .6;
+}
+
+.creative img {
+  display: inline-block;
+  float: left;
+  height: 325px;
+  width: 325px;
+}
+
+.creative h3 {
+  position: absolute;
+  text-transform: uppercase;
+  margin-top: 285px;
+  margin-left: 8px;
+  color: white;
+}
+
+.oranges:hover {
+  opacity: .6;
+}
+
+.oranges img {
+  display: inline-block;
+  float: left;
+  height: 325px;
+  width: 325px;
+}
+
+.oranges h3 {
+  position: absolute;
+  text-transform: uppercase;
+  margin-top: 285px;
+  margin-left: 333px;
+  color: white;
+}
+
+.random-food:hover {
+  opacity: .6;
+}
+
+.random-food img {
+  display: inline-block;
+  float: left;
+  height: 325px;
+  width: 325px;
+}
+
+.random-food h3 {
+  position: absolute;
+  text-transform: uppercase;
+  margin-top: 270px;
+  margin-left: 660px;
+  color: white;
+}
+
+.zomato-ad:hover{
+  opacity: .6;
+}
+
+.zomato-ad img {
+  display: inline-block;
+  float: left;
+  height: 325px;
+  width: 325px;
+}
+
+.zomato-ad h3 {
+  position: absolute;
+  text-transform: uppercase;
+  margin-top: 285px;
+  margin-left: 982px;
+  color: white;
+}
